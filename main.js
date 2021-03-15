@@ -647,6 +647,294 @@ const UserSearchInput = ({
 
 /***/ }),
 
+/***/ "./app/user-search-map/map-config.ts":
+/*!*******************************************!*\
+  !*** ./app/user-search-map/map-config.ts ***!
+  \*******************************************/
+/*! exports provided: mapOptions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapOptions", function() { return mapOptions; });
+const mapStyles = [{
+  featureType: 'all',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'administrative',
+  elementType: 'labels.text.fill',
+  stylers: [{
+    color: '#444444'
+  }]
+}, {
+  featureType: 'administrative.province',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'administrative.locality',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'administrative.locality',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'administrative.locality',
+  elementType: 'labels.text.fill',
+  stylers: [{
+    color: '#958d8d'
+  }]
+}, {
+  featureType: 'administrative.neighborhood',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'administrative.land_parcel',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'administrative.land_parcel',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'landscape',
+  elementType: 'all',
+  stylers: [{
+    color: '#f2f2f2'
+  }]
+}, {
+  featureType: 'landscape.man_made',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'poi',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }, {
+    color: '#cee9de'
+  }, {
+    saturation: '2'
+  }, {
+    weight: '0.80'
+  }]
+}, {
+  featureType: 'poi.attraction',
+  elementType: 'geometry.fill',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'poi.park',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'road',
+  elementType: 'all',
+  stylers: [{
+    saturation: -100
+  }, {
+    lightness: 45
+  }]
+}, {
+  featureType: 'road.highway',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'road.highway',
+  elementType: 'geometry.fill',
+  stylers: [{
+    visibility: 'on'
+  }, {
+    color: '#fa2052'
+  }, {
+    lightness: '35'
+  }]
+}, {
+  featureType: 'road.highway',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'road.highway',
+  elementType: 'labels.icon',
+  stylers: [{
+    hue: '#ff0000'
+  }, {
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'road.highway.controlled_access',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'road.highway.controlled_access',
+  elementType: 'labels.icon',
+  stylers: [{
+    visibility: 'on'
+  }, {
+    hue: '#0064ff'
+  }, {
+    gamma: '1.44'
+  }, {
+    lightness: '-3'
+  }, {
+    weight: '1.69'
+  }]
+}, {
+  featureType: 'road.arterial',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'road.arterial',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'road.arterial',
+  elementType: 'labels.icon',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'road.local',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'road.local',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }, {
+    weight: '0.31'
+  }, {
+    gamma: '1.43'
+  }, {
+    lightness: '-5'
+  }, {
+    saturation: '-22'
+  }]
+}, {
+  featureType: 'transit',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'off'
+  }]
+}, {
+  featureType: 'transit.line',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }, {
+    hue: '#ff0000'
+  }]
+}, {
+  featureType: 'transit.station.airport',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'simplified'
+  }, {
+    hue: '#ff0045'
+  }]
+}, {
+  featureType: 'transit.station.bus',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'on'
+  }, {
+    hue: '#00d1ff'
+  }]
+}, {
+  featureType: 'transit.station.bus',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'transit.station.rail',
+  elementType: 'all',
+  stylers: [{
+    visibility: 'simplified'
+  }, {
+    hue: '#00cbff'
+  }]
+}, {
+  featureType: 'transit.station.rail',
+  elementType: 'labels.text',
+  stylers: [{
+    visibility: 'simplified'
+  }]
+}, {
+  featureType: 'water',
+  elementType: 'all',
+  stylers: [{
+    color: '#46bcec'
+  }, {
+    visibility: 'on'
+  }]
+}, {
+  featureType: 'water',
+  elementType: 'geometry.fill',
+  stylers: [{
+    weight: '1.61'
+  }, {
+    color: '#cde2e5'
+  }, {
+    visibility: 'on'
+  }]
+}];
+const mapOptions = {
+  disableDefaultUI: true,
+  center: {
+    lat: -43.52942699743086,
+    lng: 172.63082446431713
+  },
+  mapTypeId: 'roadmap',
+  mapTypeControl: true,
+  mapTypeControlOptions: {
+    style: 2
+  },
+  zoom: 13,
+  minZoom: 2.5,
+  maxZoom: 18,
+  zoomControl: true,
+  zoomControlOptions: {
+    position: 9
+  },
+  styles: mapStyles
+};
+
+/***/ }),
+
 /***/ "./app/user-search-map/user-search-map.module.scss":
 /*!*********************************************************!*\
   !*** ./app/user-search-map/user-search-map.module.scss ***!
@@ -689,8 +977,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _react_google_maps_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @react-google-maps/api */ "../../../node_modules/@react-google-maps/api/dist/reactgooglemapsapi.esm.js");
 /* harmony import */ var _user_search_map_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./user-search-map.module.scss */ "./app/user-search-map/user-search-map.module.scss");
 /* harmony import */ var _user_search_map_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_user_search_map_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _map_config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./map-config */ "./app/user-search-map/map-config.ts");
 
 
+
+
+/* eslint-disable-next-line */
 
 const containerStyle = {
   width: '100%',
@@ -723,7 +1015,7 @@ function UserSearchMap({
     isLoaded
   } = Object(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_1__["useJsApiLoader"])({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyChM6JLjJQRH6PgwRhU1_njFhMK3EPfoDM"
+    googleMapsApiKey: 'AIzaSyChM6JLjJQRH6PgwRhU1_njFhMK3EPfoDM'
   });
   const [map, setMap] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
   const position = getMarkerPosition(user);
@@ -740,7 +1032,7 @@ function UserSearchMap({
 
   return isLoaded ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_1__["GoogleMap"], {
     mapContainerStyle: containerStyle,
-    center: center,
+    options: _map_config__WEBPACK_IMPORTED_MODULE_3__["mapOptions"],
     zoom: 13,
     onLoad: onLoad,
     onUnmount: onUnmount
